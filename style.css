@@ -110,7 +110,7 @@ portfolio
   width: 100%;
 }
 .portfolio article {
-  padding: 20px;
+  padding: 30px;
   width: 25%;
   float: left;
 }
@@ -130,6 +130,30 @@ textarea {
   border: none;
   background-color: var(--darkgray);
   color: white;
+}
+/*********
+footer
+**********/
+footer {
+  margin: 30px 0;
+  text-align: center;
+}
+footer .clearfix {
+  height: 1px;
+  background-color: var(--lightgray);
+}
+.icons i{
+  background-color: var(--yellow);
+  color: var(--gray);
+  margin: 20px 20px 40px 20px;
+  padding: 15px;
+  font-size: 1.1rem;
+}
+.icons i:hover {
+  background-color: var(--white);
+}
+footer p {
+  margin-top: 20px;
 }
 
 
