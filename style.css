@@ -19,10 +19,17 @@ basic styles
 body {
   font-family: 'Pontano Sans', sans-serif;
   font-size: var(--fontSize);
+  background-color: var(--gray);
+  color: var(--white);
 }
 .container {
   max-width: 1124px;
   margin: 0 auto;
+}
+.clearfix {
+  display: block;
+  content: '';
+  clear: both;
 }
 /*********
 header
@@ -30,6 +37,7 @@ header
 header {
   background-color: var(--yellow);
   text-align: center;
+  color: var(--darkgray);
 }
 nav ul li {
   display: inline-block;
@@ -56,3 +64,37 @@ header img {
   border: 20px solid rgba(255, 255, 255, 0.6);
   border-bottom: none;
 }
+/*********
+about
+**********/
+.about article {
+  text-align: center;
+  padding: 40px; 
+  width: 33.3%;
+  float: left;
+}
+.about h3 {
+  font-size: 1.8rem;
+}
+.about p {
+  line-height: 1.6;
+  padding: 20px 0;
+  font-size: 1.1rem;
+}
+.about button {
+  background-color: var(--yellow);
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border: none;
+  letter-spacing: 1px;
+}
+.about button:hover {
+  background-color: var(--white);
+}
+.about .clearfix {
+  width: 100%;
+  height: 2px;
+  background-color: var(--white);
+}
+
+
