@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Pontano+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap');
 :root {
   --gray: #333333;
   --darkgray: #2e2e2e;
@@ -6,9 +6,53 @@
   --lightgray: rgba(255,255,255,0.4);
   --white: #fff;
   --transition: .4s ease;
+  --fontSize: 16px;
 }
+/*********
+basic styles
+**********/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+body {
+  font-family: 'Pontano Sans', sans-serif;
+  font-size: var(--fontSize);
+}
+.container {
+  max-width: 1124px;
+  margin: 0 auto;
+}
+/*********
+header
+**********/
+header {
+  background-color: var(--yellow);
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  padding: 30px 50px;
+}
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav ul li a:hover {
+  color: var(--lightgray);
+}
+header h1 {
+  font-size: 3rem;
+  margin-top: 30px;
+}
+header p {
+  text-transform: uppercase;
+  margin: 20px 0 50px 0;
+}
+header img {
+  width: 100%;
+  display: block;
+  border: 20px solid rgba(255, 255, 255, 0.6);
+  border-bottom: none;
 }
